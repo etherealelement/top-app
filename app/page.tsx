@@ -5,7 +5,7 @@ export default function Home():JSX.Element {
   return (
     <>
     <Htag tag={"h3"}>Курсы по Photoshop</Htag>
-    <Button appearance="primary">Узнать подробнее</Button>
+    <Button appearance="primary" arrow="right">Узнать подробнее</Button>
     <Button appearance="ghost">Узнать подробнее</Button>
     </>
   );

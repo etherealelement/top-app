@@ -32,3 +32,19 @@
     color: var(--black);
     background: var(--ghost-hover);
 }
+
+.arrow {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.arrowDown {
+	transform: rotate(90deg);
+	transition: all .2s;
+}
+
+.primary svg,
+.ghost:hover svg
+{ 
+	fill: var(--white)
+}
