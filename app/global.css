@@ -7,7 +7,10 @@ body {
 :root {
   --black: #3B434E;
   --white: #FFFFFF;
+  --gray-light: #EBEBEB;
+  --ghost-hover: #cfcdcd;
   --primary: #7653FC;
+  --primary-hover: #5442a0;
   --red: #FC836D;
   --green: #1DC47E;
   --green-light: #1DC37E;

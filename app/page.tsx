@@ -1,10 +1,12 @@
 import React from "react";
-import { Htag } from "./components";
+import { Button, Htag } from "./components";
 
 export default function Home():JSX.Element {
   return (
     <>
     <Htag tag={"h3"}>Курсы по Photoshop</Htag>
+    <Button appearance="primary">Узнать подробнее</Button>
+    <Button appearance="ghost">Узнать подробнее</Button>
     </>
   );
 }
