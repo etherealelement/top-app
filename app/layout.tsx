@@ -1,4 +1,4 @@
-import {Noto_Sans} from "@next/font/google";
+import {Noto_Sans} from "next/font/google";
 import "./helpers/reset.css";
 import "./global.css";
 
