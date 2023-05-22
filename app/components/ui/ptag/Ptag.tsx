@@ -1,11 +1,11 @@
 import React from "react";
-import { PtagProps } from "./ptag.props";
+import { PtagProps } from "./Ptag.props";
 import cn from "classnames";
 import styles from "./ptag.module.css";
 
 export const Ptag = ({
 	children,
-	size,
+	size = "default",
 	className,
 	...props
 }: PtagProps): JSX.Element => {

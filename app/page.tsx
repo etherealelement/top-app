@@ -1,14 +1,19 @@
-import React from "react";
-import { Button, Htag } from "./components";
-import { Ptag } from "./components/ui/ptag/ptag";
+"use client";
+import React, {useState} from "react";
+import { Button, Htag, Ptag, Tag } from "./components";
 
 export default function Home():JSX.Element {
+  const [counter, setCounter] = useState<number>(0);
+
   return (
     <>
-    <Htag tag={"h3"}>Курсы по Photoshop</Htag>
-    <Button appearance="primary" arrow="right">Узнать подробнее</Button>
+    <Htag tag={"h3"}>{counter}</Htag>
+    <Button appearance="primary" arrow="right" onClick={()=> {setCounter(counter + 1)}}>Узнать подробнее</Button>
     <Button appearance="ghost" arrow="right">Узнать подробнее</Button>
-    <Ptag size="small" >Напишу сразу в двух курсах, так как проходил оба. Java будет многим непросвещённым сложновата в изучении, но здесь перевес из-за лидирующего положения языка как самого популярного в программировании. Выбор мой пал на эту профессию еще и потому, что Java-разработчики получают самую большую зарплату. Хотя Python начинает догонять Java по многим моментам, но вот в крупном екоме разработке Джава все-таки остается главенствующей сейчас. Скажу так – полнота программы и интенсивность присуща обоим курсам GeekBrains. Хочу отметить, что с первого дня занятий вы приступаете к практике и получаете опыт коммерческой разработки уже в свое резюме. Скажу вам как прошедший это – реально помогло в трудоустройстве!</Ptag>
+    <Ptag size="small" >Напишу сразу</Ptag>
+    <></>
+    <Tag size="s" color={"red"}>Small</Tag>
+    <Tag size="s" color={"primary"}>Small</Tag>
     </>
   );
 }
