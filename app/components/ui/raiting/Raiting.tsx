@@ -35,6 +35,7 @@ export const Raiting = ({
 						onClick={() => onClick(i + 1)}
 					>
 						<StarIcon
+							key={i}
 							tabIndex={isEditable ? 0 : -1}
 							onKeyDown={(e: KeyboardEvent<SVGElement>) =>
 								isEditable && handleSpace(i + 1, e)

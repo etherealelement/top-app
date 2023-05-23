@@ -1,18 +1,15 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Button, Htag, Ptag, Raiting, Tag } from "./components";
+import { withLayout } from "./layout/Layout";
 
-export default function Home(): JSX.Element {
+function Home(): JSX.Element {
 	const [rating, setRating] = useState<number>(4);
-
 
 	return (
 		<>
 			<Htag tag={"h3"}>3</Htag>
-			<Button
-				appearance="primary"
-				arrow="right"
-			>
+			<Button appearance="primary" arrow="right">
 				Узнать подробнее
 			</Button>
 			<Button appearance="ghost" arrow="right">
@@ -26,8 +23,14 @@ export default function Home(): JSX.Element {
 			<Tag size="s" color={"primary"}>
 				Small
 			</Tag>
-			<Raiting raiting={rating} key={2} isEditable setRaiting={setRating}>
-			</Raiting>
-			</>
+			<Raiting
+				raiting={rating}
+				key={234}
+				isEditable
+				setRaiting={setRating}
+			></Raiting>
+		</>
 	);
 }
+
+export default withLayout(Home);

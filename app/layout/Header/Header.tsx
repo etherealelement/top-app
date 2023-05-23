@@ -1,6 +1,6 @@
-import { FC } from 'react';
+import React from 'react';
 import { HeaderProps } from './Header.props';
 
-export const Header: FC = ({...props}: HeaderProps):JSX.Element => {
+export const Header = ({...props}: HeaderProps):JSX.Element => {
     return <div {...props}>Header</div>;
 };
