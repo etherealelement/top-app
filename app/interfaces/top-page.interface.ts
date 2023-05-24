@@ -1,3 +1,11 @@
+export enum TopLevelCategory {
+    Courses,
+    Services,
+    Books,
+    Products
+}
+
+
 export interface TopPageAdvantage {
     _id: string;
     title: string;
@@ -22,7 +30,7 @@ export interface TopPageModel {
     tagsTitle: string;
     metaTitle: string;
     metaDescription: string;
-    firstCategory: number;
+    firstCategory: TopLevelCategory;
     advantages: TopPageAdvantage[],
     createdAt: Date,
     updatedAt: Date,
