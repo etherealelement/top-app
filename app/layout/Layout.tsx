@@ -9,8 +9,8 @@ import styles from "./Layout.module.css";
 const Layout = ({ children }: LayoutProps): JSX.Element => {
 	return (
 		<div className={styles.wrapper}>
-			<Header className={styles.header}></Header>
-			<Sidebar className={styles.sidebar}></Sidebar>
+			<Header className={styles.header}>Header</Header>
+			<Sidebar className={styles.sidebar}>sidebar</Sidebar>
 			<div className={styles.body}>
 				<div>{children}</div>
 			</div>
@@ -22,7 +22,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
 export const withLayout = <T extends Record<string, unknown>>(
 	Component: FunctionComponent<T>
 ) => {
-	return function withLayoutComponent(props: T): JSX.Element {
+	return function withLayoutComponent(props: T) {
 		return (
 			<Layout>
 				<Component {...props}></Component>
