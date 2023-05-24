@@ -1,4 +1,4 @@
-export interface Advantage {
+export interface TopPageAdvantage {
     _id: string;
     title: string;
     description: string;
@@ -11,7 +11,7 @@ export interface HHData {
     middleSalary: number;
 }
 
-export interface RootObject {
+export interface TopPageModel {
     tags: string[];
     _id: string;
     secondCategory: string;
@@ -23,7 +23,7 @@ export interface RootObject {
     metaTitle: string;
     metaDescription: string;
     firstCategory: number;
-    advantages: Advantage[],
+    advantages: TopPageAdvantage[],
     createdAt: Date,
     updatedAt: Date,
     hh: HHData;
