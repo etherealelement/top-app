@@ -1,0 +1,13 @@
+.sideBar{
+    margin-top: 10px;
+}
+
+.sideBar a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: all .3s;
+}
+
+.sideBar a:hover {
+    color: var(--primary-hover)
+}

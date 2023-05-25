@@ -28,8 +28,8 @@ export default function RootLayout({
 		<html lang="ru">
 			<body className={notoSans.className}>
 				<div className={styles.wrapper}>
-					<Header className={styles.header}>Header</Header>
-					<Sidebar className={styles.sidebar}>sidebar</Sidebar>
+					<Header className={styles.header}></Header>
+					<Sidebar className={styles.sidebar}></Sidebar>
 					<div className={styles.body}>
 						<div>{children}</div>
 					</div>
