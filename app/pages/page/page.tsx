@@ -8,10 +8,15 @@ const Page = (): JSX.Element => {
 
 	useEffect(() => {
 		const loadData = async () => {
-			const {data: tags} = await axios.get<TopPageModel>(
-				process.env.NEXT_PUBLIC_DOMAIN + "/api/top-page/byAlias/photoshop"
-			);
-			setPages(tags.advantages);
+			try {
+				const {data: tags} = await axios.get<TopPageModel>(
+					process.env.NEXT_PUBLIC_DOMAIN + "/api/top-page/byAlias/photoshop"
+				);
+				console.log(tags)
+				setPages(tags.advantages);
+			} catch (error) {
+				alert(error);
+			}
 		};
 		loadData();
 	}, []);

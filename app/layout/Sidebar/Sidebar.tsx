@@ -20,6 +20,7 @@ export const Sidebar = ({ ...props }: SidebarProps): JSX.Element => {
 				}
 			);
             setMenuItem(menu);
+            // console.log(menu);
 		};
         loadMenu();
 	});
@@ -27,7 +28,7 @@ export const Sidebar = ({ ...props }: SidebarProps): JSX.Element => {
 	return <div {...props}>
         <ul>
             {menuItem.map((item: MenuItem)=> {
-                return <li className = {styles.sideBar} key={item._id.secondCategory}><Link key={item._id.secondCategory} href="/">{item._id.secondCategory}</Link></li>;
+                return <li className = {styles.sideBar} key={item._id.secondCategory}><Link key={item._id.secondCategory} href="/pages/page">{item._id.secondCategory}</Link></li>;
             })}
         </ul>
     </div>;

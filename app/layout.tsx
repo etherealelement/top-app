@@ -28,6 +28,7 @@ export default function RootLayout({
 		<html lang="ru">
 			<body className={notoSans.className}>
 				<div className={styles.wrapper}>
+					
 					<Header className={styles.header}></Header>
 					<Sidebar className={styles.sidebar}></Sidebar>
 					<div className={styles.body}>
